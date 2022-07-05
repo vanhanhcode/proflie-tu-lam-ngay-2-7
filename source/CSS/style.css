@@ -1,123 +1,62 @@
-* {
+*{
     padding: 0;
     margin: 0;
 }
-html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-    padding: 0 4rem;
+html{
+    font-size: 65.2%;
+  
 }
-/* set up khi viet  mot chuong trinh */
-
-.main {
+.wapper{
+    height: 100%;
     width: 100%;
-
+    padding: 0 5rem;
 }
 header{
-    /* position: fixed; */
-}
-header {
-height: 5rem;
-display: flex;
-justify-content: space-between;
-background-color: bisque;
-}
-.header__logo{
-    width: 50%;
+    height: 5rem;
+    background-color: blue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .header__logo img{
-height: 5rem;
-
+    height: 5rem;
 }
-.header__item__soicial {
+.header__icon{
+    margin: 0 4rem;
+}
+.header__icon a{
+    color: rgb(0, 255, 55);
+    height: 5rem;
     line-height: 5rem;
-    padding-right: 1rem;
-}
-.header__item__soicial i{
-    font-size: 2rem;
-    padding:0.5rem;
-}
-/* header__logo */
-
-.nav{
-background: #38d6b480;
-height: 3rem;
-width: 100%;
-
-}
-.nav__sub{
-list-style: none;
-
-}
-.nav__sub li {
-    display: inline-block;
-    line-height: 3rem;
-    position: relative;
-    /* position này kết hợp với positon ở thẻ sub__nav1 mới cho cấp con nó nới giống hàng dọc được */
-}
-.nav__sub > li > a{
-    color: black;
-}
-.nav__sub li a {
     text-decoration: none;
-    padding: 0 2rem;
-    text-transform: uppercase;
-    display: inline-block;  
-    /* display inline dùng với thẻ li:hover a dưới để cho khi di chuột về thẻ đó cho nó bằng với kích thước của backround */
+    padding: 0.5rem;
 }
-.nav__sub > li:hover > a {
-    background-color: blue;
-    color: aqua;
-    /*  ý nghĩa của dòng selecter trên là .nav__sub1 cho hover cấp 1 thẻ li sau đó chọn thẻ a */
+.header__icon a:hover{
+    background-color: chocolate;
+    color: #fff;
 }
-.nav__sub > li:hover .nav__sub1{
-    display: block;
-    /* cái này để di vào để khi nó cho ẩn hoặc hiên thị  */
+/* header logo với header icon */
+nav .container-fluid {
+background-color: darksalmon;
 }
-.nav__sub1{
-    display: none;
-    position: absolute;
-    background-color: gray;
-    list-style: none;
-}
-.nav__sub1 li:hover a{
-    background-color: aquamarine;
-    color: black;
-}
-.nav__sub1 a {
-    color:aqua
-}
-.nav__sub1 > li {
-    display: block;
-}
-/* header__nav */
-.slider{
-    height: auto;
-    background-color: rgb(236, 202, 202);
-}
-.slider img{
+.content{
+    display: flex;
     width: 100%;
-    max-height: auto;
+    padding: 2rem 0;
 }
-.footer{
-    background-color: black;
-    height: 15rem;
-    color: #fff;
-   
-    bottom: 0%;
-    font-size: 1rem;
-}
-.footer h2,p {
-    display: flex;
-    justify-content: center;
+ h2{
     padding: 1rem 0;
-}
-.footer__icon {
     display: flex;
     justify-content: center;
+    font-weight: 15rem;
+    size: 6rem;
+    text-shadow: -0rem 1rem 1rem yellowgreen;
+    text-transform: uppercase;
 }
-.footer__icon i{
-    padding: 0 1rem; 
-    color: #fff;
-    font-size: 1.5rem;
+.card{
+    width: 25%;
+    height: 20rem;
+}
+.card-text{
+    height: 15rem;
 }
